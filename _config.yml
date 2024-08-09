@@ -14,7 +14,24 @@ timezone: Asia/Shanghai # 时区（请自行查询）
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: :year/:month/:day/:title/
+## permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html  ## 此处可以自己设置
+
+## abbrlink config
+abbrlink:
+  alg: crc32      #support crc16(default) and crc32 进制
+  rep: hex        #support dec(default) and hex  算法
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+  ## Generate categories from directory-tree
+  ## depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(default)
+     depth:        #3(default)
+     over_write: false 
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
+
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -102,3 +119,30 @@ theme: solitude
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+  # 最近评论
+# recent comments
+# 前置要求：需配置最近评论页面和评论，否则显示为空
+# Pre-requirements: recent comments page needs to be configured and commented, otherwise it will be displayed as empty
+recent_comments:
+  enable: true
+  # 评论数
+  # Number of comments
+  limit: 50 # ⚠️ Waline 仅支持最大50条评论 / ⚠️ Waline only supports a maximum of 50 comments
+  # 缓存时间
+  # Cache time
+  cache: 0.2 # 单位：天 / Unit: day
+  page: /recentcomments/ # 最近评论页面 / recent comments page
+  img: /img/recent_c.avif # 中控台显示图片（不填不显示） / image displayed in the console
+
+# 留言板
+# message board
+# 前置要求：需配置留言板页面
+# Pre-requirements: message board page needs to be configured
+envelope:
+  enable: true
+  line: 10 # 显示行数
+  speed: 20 # 播放速度
+  hover: true # 鼠标悬停暂停
+  loop: true # 循环播放
+  page: message # 留言板页面
