@@ -414,9 +414,9 @@ keyboard:
 # --------------------------- start ---------------------------
 # Copy
 copy:
-  enable: true
+  enable: false
   copyright: # Turn on Link copyright information after copying.
-    enable: true
+    enable: false
     limit: 50 # When more than 50 copies, the copy will contain copyright information.
 # --------------------------- end ---------------------------
 
