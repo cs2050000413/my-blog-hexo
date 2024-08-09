@@ -48,7 +48,7 @@ nav:
       音乐库: /music/ || fas fa-music
     关于: /about/
   right: # right button
-    random: false # Random article
+    random: true # Random article
     custom:
      - name: Start # name
        url: https://www.travellings.cn/go.html # Jump link
@@ -59,7 +59,7 @@ nav:
 
 # --------------------------- start ---------------------------
 hometop:
-  enable: false
+  enable: true
   banner:
     title: Tranquility <br>and love life
     url: Hexo Theme Solitude
@@ -154,7 +154,7 @@ aside:
   # article table of contents
   toc:
     post: true
-    page: false
+    page: true
     vague: true
   # --------------------------- end ---------------------------
 
@@ -170,18 +170,18 @@ aside:
   # --------------------------- start ---------------------------
   # Archive
   archive:
-    enable: false
+    enable: true
     type: "month" # month: by month / year: by year
   # --------------------------- end ---------------------------
 
   # --------------------------- start ---------------------------
   siteinfo:
-    postcount: false # Number of articles
+    postcount: true # Number of articles
     wordcount: false # Total number of words
-    pv: false # PV
-    uv: false # UV
-    updatetime: false # Last update date
-    runtimeenable: false # Website creation time
+    pv: true # PV
+    uv: true # UV
+    updatetime: true # Last update date
+    runtimeenable: true # Website creation time
     runtime: "2023-04-20 00:00:00" # Format: yyyy-MM-dd hh-mm-ss
   # --------------------------- end ---------------------------
 # --------------------------- end ---------------------------
@@ -191,7 +191,7 @@ aside:
 index_post_list:
   direction: column # row / column
   column: 2 # 2: 2 columns 3: 3 columns
-  content: false # 1: post.description / 2: Automatically get descriptions or screenshots / 3: Use only interception / false: No content is displayed
+  content: true # 1: post.description / 2: Automatically get descriptions or screenshots / 3: Use only interception / false: No content is displayed
   length: 500 # The length of the screenshot content
   cover: both # left: on the left : left / right: on the right : right / both: both sides : both
 # --------------------------- end ---------------------------
@@ -224,13 +224,13 @@ post:
       license: CC BY-NC-SA 4.0 # License
       licenurl: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh # License link
   meta: # Article meta information
-    date: false # Release date
-    updated: false # Update date
-    locate: false # Location
+    date: true # Release date
+    updated: true # Update date
+    locate: true # Location
     wordcount: false # Number of words
-    readtime: false # uv
-    pv: false # pv
-    comment: false # Comment count
+    readtime: true # uv
+    pv: true # pv
+    comment: true # Comment count
   award: # Reward
     enable: true
     appreciators: /about/ # Reward page
@@ -255,7 +255,7 @@ post:
        - qrcode
   rss: # /atom.xml
   covercolor: # After opening, the main color of the cover image will be used as the background color.
-    enable: false
+    enable: true
     mode: local # local: local color / api: img2color color
     api: https://api.qjqq.cn/api/Imgcolor?img= # api address
     time: 43200000 # api color interval (milliseconds), default is 12 hours
@@ -463,7 +463,7 @@ mermaid: true
 # --------------------------- start ---------------------------
 # OpenGraph
 OpenGraph:
-  enable: false
+  enable: true
   options:
     # twitter_card:
     # twitter_image:
@@ -482,7 +482,7 @@ wordcount: false
 
 # --------------------------- start ---------------------------
 # Busuanzi
-busuanzi: false
+busuanzi: true
 busuanzi_use: 0 # 0: original / 1: qingjiao (other: other custom busuanzi platform)
 # --------------------------- end ---------------------------
 
@@ -498,7 +498,7 @@ search:
     # hits:
     #   per_page: 6
   local:
-    preload: false
+    preload: true
     CDN: # url: search.xml
 # --------------------------- end ---------------------------
 
@@ -522,21 +522,21 @@ post_ai:
 # --------------------------- start ---------------------------
 # Katex
 katex:
-  enable: false
-  per_page: false # Whether to load on each page
-  copytex: false # Whether to enable copy formula
+  enable: true
+  per_page: true # Whether to load on each page
+  copytex: true # Whether to enable copy formula
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
 comment:
   use: # waline, twikoo, valine, artalk, giscus # Up to two comment systems can be turned on at the same time
-  commentBarrage: false # Hot comment switch
-  lazyload: false # Lazy load
-  count: false # Whether to use the comment count
-  pv: false # Whether to use the page view count
+  commentBarrage: true # Hot comment switch
+  lazyload: true # Lazy load
+  count: true # Whether to use the comment count
+  pv: true # Whether to use the page view count
   avatar: https://gravatar.com/avatar # Avatar
   hot_tip: # Hot comment tips
-    enable: false
+    enable: true
     count: 3 # Display when more than 3 comments
 twikoo: # https://twikoo.js.org/
   envId: # url: https://twikoo.sondy.top/
@@ -546,14 +546,14 @@ twikoo: # https://twikoo.js.org/
   option: # twikoo option
 waline: # https://waline.js.org/
   envId: # url: https://waline.wzsco.top
-  pageview: false # Whether to enable page access statistics
+  pageview: true # Whether to enable page access statistics
   option: # waline configuration item
 valine:
   appId: # leancloud application app id
   appKey: # leancloud application app key
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   avatar: # https://valine.js.org/avatar.html
-  visitor: false
+  visitor: true
   style: true # Use custom styles when turned on
   option: # options list
 artalk:
@@ -573,9 +573,9 @@ giscus:
 # --------------------------- start ---------------------------
 # Console
 console:
-  enable: false
+  enable: true
   recentComment: # Recent comments
-    enable: false
+    enable: true
     storage: .2 # Cache time 1: 1 day / .5 : half a day
   card:
     tags: true # Tags
@@ -594,7 +594,7 @@ verify_site:
 # --------------------------- start ---------------------------
 # CSS Prefix
 # When turned on, it will automatically prefix the CSS (to get better browser support), but this will increase the size of the CSS file.
-css_prefix: false
+css_prefix: true
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -619,7 +619,7 @@ extends:
 # --------------------------- start ---------------------------
 # PWA
 pwa:
-  enable: false
+  enable: true
   manifest: /manifest.json # manifest.json
   theme_color: "#006a73" # Theme color
   mask_icon: /img/pwa/favicon.png # Mask icon
@@ -632,8 +632,8 @@ pwa:
 # --------------------------- start ---------------------------
 # Google Adsense
 google_adsense:
-  enable: false
-  auto_ads: false # After auto ads are turned off, it is manual ads
+  enable: true
+  auto_ads: true # After auto ads are turned off, it is manual ads
   enable_page_level_ads: true # Page-level ads
   aside_card: true # Sidebar card ads
   post_card: true # Post card ads
@@ -646,10 +646,10 @@ google_adsense:
 # --------------------------- start ---------------------------
 # Custom right menu
 right_menu:
-  enable: false
-  commentBarrage: false # Whether to display the hot comment switch.
+  enable: true
+  commentBarrage: true # Whether to display the hot comment switch.
   translate: # Simplified and Traditional Chinese translation.
-    enable: false
+    enable: true
     defaultEncoding: 2 # 1: 默认繁体 2: 默认简体
     translateDelay: 0 # 首次加载翻译迟疑时间
   custom_list: # Custom list
@@ -674,7 +674,7 @@ right_menu:
 # Memorial
 # Turn the entire site gray on memorable days.
 memorial:
-  enable: false
+  enable: true
   date:
   #  - 7-7 # 卢沟桥事变
   #  - 9-18 # 九一八事变
@@ -685,7 +685,7 @@ memorial:
 # Lure
 # When the user exits the page, modify the title
 lure:
-  enable: false
+  enable: true
   jump: 404 Not Found
   back: ヾ(≧∇≦*)ゝHey, hey, you fell for it.
 # --------------------------- end ---------------------------
@@ -693,7 +693,7 @@ lure:
 # --------------------------- start ---------------------------
 # Article expiration
 expire:
-  enable: false
+  enable: true
   time: 30 # days
   position: top # top / bottom
   text_prev: 'This article expired '
@@ -703,7 +703,7 @@ expire:
 # --------------------------- start ---------------------------
 # Background
 background:
-  enable: false
+  enable: true
   opacity: .2
   dark: https://i.pinimg.com/originals/d8/b3/9d/d8b39d12b653810db452c437211aeb2e.png
   light: https://i.pinimg.com/originals/93/57/38/935738ed9657b296c2ef0ebd2151eb66.jpg
