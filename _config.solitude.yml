@@ -90,7 +90,7 @@ hometop:
     url: https://solitude.js.org/
     img: /img/default.avif
     color: "none"
-carousel: false
+carousel: true
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -161,7 +161,7 @@ aside:
   # --------------------------- start ---------------------------
   # Tags
   tags:
-    enable: false
+    enable: true
     limit: 20 # Number of tags displayed
     highlight_list: # Highlighted tags
       # - Hexo
@@ -176,12 +176,12 @@ aside:
 
   # --------------------------- start ---------------------------
   siteinfo:
-    postcount: true # Number of articles
+    postcount: false # Number of articles
     wordcount: false # Total number of words
-    pv: true # PV
-    uv: true # UV
-    updatetime: true # Last update date
-    runtimeenable: true # Website creation time
+    pv: false # PV
+    uv: false # UV
+    updatetime: false # Last update date
+    runtimeenable: false # Website creation time
     runtime: "2023-04-20 00:00:00" # Format: yyyy-MM-dd hh-mm-ss
   # --------------------------- end ---------------------------
 # --------------------------- end ---------------------------
@@ -232,27 +232,27 @@ post:
     pv: false # pv
     comment: false # Comment count
   award: # Reward
-    enable: false
+    enable: true
     appreciators: /about/ # Reward page
     title: Thanks for your appreciation.
     desc: Because of your support, I realize the value of writing articles.
     list:
-      # - name: Github Sponsor
-      #   qcode: https://s3.qjqq.cn/47/661ba900c4bc1.webp!color
-      #   url: https://github.com/sponsors/everfu
-      #   color: var(--efu-black)
+      - name: Github Sponsor
+        qcode: https://s3.qjqq.cn/47/661ba900c4bc1.webp!color
+        url: https://github.com/sponsors/everfu
+        color: var(--efu-black)
   share: # Share icon
-    enable: false
+    enable: true
     list:
-      #  - qq
-      #  - weibo
+       - qq
+       - weibo
       #  - twitter
       #  - facebook
       #  - telegram
       #  - whatsapp
       #  - linkedin
-      #  - link
-      #  - qrcode
+       - link
+       - qrcode
   rss: # /atom.xml
   covercolor: # After opening, the main color of the cover image will be used as the background color.
     enable: false
@@ -292,7 +292,7 @@ display_mode:
 # --------------------------- start ---------------------------
 # Related articles
 related_post:
-  enable: false
+  enable: true
   limit: 2
   date_type: created # created: release date / updated: update date
 # --------------------------- end ---------------------------
@@ -301,7 +301,7 @@ related_post:
 # Footer
 footer:
   information:
-    author: false # enable site_icon in footer
+    author: true # enable site_icon in footer
     left:
       # Github: https://github.com/efuo || fab fa-github # Name: link || icon
       # Mail: mailto:o@efu.me || fab fa-envelope
@@ -342,8 +342,8 @@ errorpage:
 # --------------------------- start ---------------------------
 # Says Page
 says:
-  enable: false
-  home_mini: false
+  enable: true
+  home_mini: true
   page: '/essay/'
   style: 1
   strip: 30
@@ -352,7 +352,7 @@ says:
 # --------------------------- start ---------------------------
 # Recent comments Page
 recent_comments:
-  enable: false
+  enable: true
   limit: 50 # ⚠️waline 仅支持最大50条评论 / ⚠️waline only supports a maximum of 50 comments
   cache: 0.2 # 1 = 1天 / 1 = 1 day
   page: /recentcomments/ # 最近评论页面 / recent comments page
@@ -362,7 +362,7 @@ recent_comments:
 # --------------------------- start ---------------------------
 # Danmaku Page
 envelope:
-  enable: false
+  enable: true
   line: 10 # 显示行数
   speed: 20 # 播放速度
   hover: true # 鼠标悬停暂停
@@ -423,7 +423,7 @@ copy:
 # --------------------------- start ---------------------------
 # Lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # post, site
   placeholder: /img/loading.avif
   errorimg: /img/error_load.avif
@@ -432,7 +432,7 @@ lazyload:
 # --------------------------- start ---------------------------
 # Loading
 loading:
-  fullpage: false # Full screen loading
+  fullpage: true # Full screen loading
   pace: true # Pace loading
 # --------------------------- end ---------------------------
 
@@ -449,15 +449,15 @@ highlight:
 
 # --------------------------- start ---------------------------
 # Lightbox
-lightbox: false
+lightbox: true
 # warning: Please select any one, but cannot be turned on at the same time.
-fancybox: false # fancybox
-mediumZoom: false # mediumZoom
+fancybox: true # fancybox
+mediumZoom: true # mediumZoom
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
 # Mermaid
-mermaid: false
+mermaid: true
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -489,7 +489,7 @@ busuanzi_use: 0 # 0: original / 1: qingjiao (other: other custom busuanzi platfo
 # --------------------------- start ---------------------------
 # Search
 search:
-  enable: false
+  enable: true
   type: local # local / algolia
   tags:
     # - Solitude
@@ -653,21 +653,21 @@ right_menu:
     defaultEncoding: 2 # 1: 默认繁体 2: 默认简体
     translateDelay: 0 # 首次加载翻译迟疑时间
   custom_list: # Custom list
-    # - name: Random
-    #   click: toRandomPost()
-    #   id: menu-randomPost
-    #   class:
-    #   icon: fas fa-tower-broadcast
-    # - name: Categories
-    #   click: pjax.loadUrl('/categories/') # External links with window.open, pjax can not request cross-domain content.
-    #   id:
-    #   class:
-    #   icon: fas fa-clone
-    # - name: Tags
-    #   click: pjax.loadUrl('/tags/')
-    #   id:
-    #   class:
-    #   icon: fas fa-tags
+    - name: Random
+      click: toRandomPost()
+      id: menu-randomPost
+      class:
+      icon: fas fa-tower-broadcast
+    - name: Categories
+      click: pjax.loadUrl('/categories/') # External links with window.open, pjax can not request cross-domain content.
+      id:
+      class:
+      icon: fas fa-clone
+    - name: Tags
+      click: pjax.loadUrl('/tags/')
+      id:
+      class:
+      icon: fas fa-tags
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
