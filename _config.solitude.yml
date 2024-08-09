@@ -22,16 +22,16 @@ site:
     custom: Solitude
   # 网页 Icon
   # Web icon
-  siteIcon: /img/pwa/favicon.ico
+  siteIcon: /img/pwa/favicon.png
   # 页脚的Logo、加载动画默认的logo
   # Logo in the footer, default logo for loading animation
-  icon: /img/pwa/favicon.ico
+  icon: /img/pwa/favicon.png
 
 # --------------------------- start ---------------------------
 nav:
   group:
    project: # name
-     Solitude: https://github.com/everfu/hexo-theme-solitude || /img/pwa/favicon.ico # name: url || icon
+     Solitude: https://github.com/everfu/hexo-theme-solitude || /img/pwa/favicon.png # name: url || icon
   menu:
     主页: / # name: link
     文库: # name
@@ -423,7 +423,7 @@ copy:
 # --------------------------- start ---------------------------
 # Lazyload
 lazyload:
-  enable: true
+  enable: false
   field: site # post, site
   placeholder: /img/loading.avif
   errorimg: /img/error_load.avif
