@@ -58,39 +58,72 @@ nav:
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
+# 首页顶部样式
+# Home top style
 hometop:
-  enable: true
+  enable: true # 是否打开 / if enable
+  # banner display
   banner:
-    title: Tranquility <br>and love life
+    # 左上角显示大文字
+    # Large text displayed in the upper left corner
+    # tip：可使用html标签
+    # tip: html tags be used
+    title: 宁静致远<br>热爱生活
+    # 左上角显示小文字
+    # Small text displayed in the upper left corner
     url: Hexo Theme Solitude
+    # 轮播icon
+    # Carousel icon
+    tip: 76x76 size
     icon:
-      HTML: # name
-        img: https://i.postimg.cc/vBWVnY8q/html.png # url
-        color: "#e9572b" # color
+      HTML: # 名字 / Name
+        img: https://7.isyangs.cn/34/65f2e42921677-34.png # 图片 / Image
+        color: "#e9572b" # 背景色 / Background color
       JS:
-        img: https://i.postimg.cc/3N10Ltv2/js.png
+        img: https://7.isyangs.cn/34/65f2e43ceddda-34.png
         color: "#f7cb4f"
       Docker:
-        img: https://i.postimg.cc/8Pk6Fg24/docker.png
+        img: https://7.isyangs.cn/34/65f2e45462045-34.png
         color: "#57b6e6"
       Flutter:
-        img: https://i.postimg.cc/hPC7T3gB/flutter.png
+        img: https://7.isyangs.cn/34/65f2e47acbe98-34.png
         color: "#ffffff"
       WebPack:
-        img: https://i.postimg.cc/dVLZBmtT/webpack.png
+        img: https://7.isyangs.cn/34/65f2e488bf8ed-34.png
         color: "#2e3a41"
       Git:
-        img: https://i.postimg.cc/nhgjwjCS/git.png
+        img: https://7.isyangs.cn/34/65f2e499066fa-34.png
         color: "#df5b40"
-      
 
+  # 左下跳转按钮
+  # Banner lower left jump button
+  group:
+    热门: /tags/热门/ || st-fire-fill || linear-gradient(to right,#f65,#ffbf37)
+    教程: /tags/教程/ || st-book-mark-fill || linear-gradient(to right,#358bff,#15c6ff)
+    精选: /tags/精选/ || st-star-smile-fill || linear-gradient(to right,#18e7ae,#1eebeb)
+
+  # 右侧置顶列表（在文章的front matter中添加“recommend: true”）
+  Right top list (add "recommend: true" in the front matter of the article)
   recommendList:
-    sup: Top
-    title: Solitude Documentation
-    url: https://solitude.js.org/
-    img: /img/default.avif
-    color: "none"
-carousel: true
+    # 左上角显示文字
+    # Large text displayed in the upper left corner
+    sup: 置顶
+    # 左下角大字
+    # Large text in the lower left corner
+    title: Solitude 主题文档
+    # 点击跳转链接
+    # Click the jump link
+    # url: https://solitude.js.org/
+    # 显示背景图片
+    # Display background image
+    img: /img/1721635633231.jpg
+    # 阴影颜色
+    # Shadow color
+    color: none
+#轮播效果
+# 使用方法：在文章的front matter中添加“recommend: true”
+# tip：建议开了这个就不要开hometop，其功能类似
+carousel: false
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -112,24 +145,24 @@ aside:
   card:
     style: 0 # 0: default 1: style 1 2: style 2
     author:
-      img: /img/avatar.avif # url (avatar)
+      img: /img/user.png # url (avatar)
       sticker: # url (sticker), 24x24
     url: /about/ # Click name to jump to address
-    background: # https://s3.qjqq.cn/47/663af296b85f4.webp!color # Background image(Invalid if style is 0)
-    content: Here is my personal blog # Introduction (Invalid if style is 1)
-    content2: I believe you can find knowledge and tutorials here that will be useful to you. # Introduction (Invalid if style is 1)
+    background:  https://s3.qjqq.cn/47/663af296b85f4.webp!color # Background image(Invalid if style is 0)
+    content: 欢迎来到我的博客！ # Introduction (Invalid if style is 1)
+    content2: 流水不腐，户枢不蠹。 # Introduction (Invalid if style is 1)
     sayhello: # Style 2 is invalid
-      morning: ✨ Good morning. It's a new day
-      noon: It's time for a midday break
-      afternoon: Tea time. 🍵
-      night: early bedtime
-      goodnight: Good night 😴
+      morning: ✨ 早上好，新的一天元气满满
+      noon: 该吃午饭了咯
+      afternoon: 下午茶时间. 🍵
+      night: 辛苦了，早点休息哦
+      goodnight: 晚安宝贝 😴
     sayhello2: # Style 2 is invalid, Triggered when sayhello is clicked.
-      # - You'll make it.
-      # - You're gonna make it.
-      # - Good luck, stranger.
+      - 你肯定会做到的
+      - 你已经做到了
+      - 祝你好运，勇士
     information:
-    #  Github: https://github.com/everfu || fab fa-github # Name: link || icon
+     Github: https://github.com/cs2050000413 || fab fa-github # Name: link || icon
     #  Bilibili: https://space.bilibili.com/1329819902 || fab fa-bilibili
   # --------------------------- end ---------------------------
 
@@ -182,7 +215,7 @@ aside:
     uv: true # UV
     updatetime: true # Last update date
     runtimeenable: true # Website creation time
-    runtime: "2023-04-20 00:00:00" # Format: yyyy-MM-dd hh-mm-ss
+    runtime: "2024-08-08 00:00:00" # Format: yyyy-MM-dd hh-mm-ss
   # --------------------------- end ---------------------------
 # --------------------------- end ---------------------------
 
@@ -190,7 +223,7 @@ aside:
 # Home page article configuration information
 index_post_list:
   direction: column # row / column
-  column: 2 # 2: 2 columns 3: 3 columns
+  column: 3 # 2: 2 columns 3: 3 columns
   content: true # 1: post.description / 2: Automatically get descriptions or screenshots / 3: Use only interception / false: No content is displayed
   length: 500 # The length of the screenshot content
   cover: both # left: on the left : left / right: on the right : right / both: both sides : both
@@ -204,8 +237,8 @@ page:
   categories: true # Categories page
   archives: 0 # list: Sort List / 1: Follow HomeList
   default: # Default value
-    cover:
-      # - /img/default.png # 默认图片 / default cover
+    cover: 
+      - /img/default.avif # 默认图片 / default cover
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -215,12 +248,12 @@ post:
     top_cover: true # Article information that displays a wave effect at the top of the article when opened.
     cover: # Default image when no cover is set
       - /img/pwa/favicon.png # 默认图片 / default cover
-    locate: China # Location
+    locate: 浙江杭州 # Location
     copyright: # Copyright
       enable: true
       author:
         url: /about/ # Author link
-        img: /img/pwa/favicon.png # Default site_icon is not filled in
+        img: /img/pwa/user.png # Default site_icon is not filled in
       license: CC BY-NC-SA 4.0 # License
       licenurl: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh # License link
   meta: # Article meta information
@@ -234,13 +267,13 @@ post:
   award: # Reward
     enable: true
     appreciators: /about/ # Reward page
-    title: Thanks for your appreciation.
-    desc: Because of your support, I realize the value of writing articles.
+    title: 感谢您的赞赏。
+    desc: 因为有你们的支持，我才体会到写文章的价值。
     list:
-      - name: Github Sponsor
-        qcode: https://s3.qjqq.cn/47/661ba900c4bc1.webp!color
-        url: https://github.com/sponsors/everfu
-        color: var(--efu-black)
+      - name: 支付宝
+        qcode: \img\alipay.jpg
+        # url: https://github.com/sponsors/everfu
+        color: var(--efu-blue)
   share: # Share icon
     enable: true
     list:
@@ -303,30 +336,37 @@ footer:
   information:
     author: true # enable site_icon in footer
     left:
-      # Github: https://github.com/efuo || fab fa-github # Name: link || icon
-      # Mail: mailto:o@efu.me || fab fa-envelope
+      Github: https://github.com/cs2050000413 || fab fa-github # Name: link || icon
+      Mail: mailto:910702767@qq.com || fab fa-envelope
     right:
       # Bilibili: https://space.bilibili.com/1329819902 || fab fa-bilibili
       # Douyin: https://v.douyin.com/iJsLc8jt/ || fab fa-tiktok
-  group:
-    # Navgation:
-    #   Archives: /archives/
-    #   Categories: /categories/
-    #   Tags: /tags/
-    # Server:
-    #   Aliyun: https://aliyun.com/
-    #   51la: https://v6.51.la/
-    # Arrangement:
-    #   Cookies: /cookies/
-    #   Privacy: /privacy/
-    #   Copyright: /copyright/
+  group: # 从左至右 / From left to right
+    导航:
+      归档: /archives/
+      分类: /categories/
+      标签: /tags/
+    服务:
+      阿里云: https://aliyun.com/
+      51la统计: https://v6.51.la/
+      百度统计: https://tongji.baidu.com/
+    支持:
+      打赏记录: /about/
+    协议:
+      Cookies: /cookies/
+      用户协议: /privacy/
+      版权协议: /copyright/
 
-  randomlink: false # Random link
-  privacy: # /privacy/ # Privacy policy
-  license: # https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh # License
+  randomlink: true # Random link
+  privacy:  /privacy/ # Privacy policy
+  license:  https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh # License
   links:
-    - name: Theme
-      url: https://github.com/everfu/hexo-theme-solitude
+      - name: 主题
+        url: https://github.com/everfu/hexo-theme-solitude
+      - name: 订阅
+        url: /atom.xml
+    # - name: Theme
+    #   url: https://github.com/everfu/hexo-theme-solitude
     # - name: RSS
     #   url: /atom.xml
 # --------------------------- end ---------------------------
@@ -335,7 +375,7 @@ footer:
 # error page
 errorpage:
   img: /img/404.avif
-  text: =awa= Page NotFound # Text
+  text: =awa= 页面走丢了 # Text
   recommendList: true
 # --------------------------- end ---------------------------
 
@@ -356,7 +396,7 @@ recent_comments:
   limit: 50 # ⚠️waline 仅支持最大50条评论 / ⚠️waline only supports a maximum of 50 comments
   cache: 0.2 # 1 = 1天 / 1 = 1 day
   page: /recentcomments/ # 最近评论页面 / recent comments page
-  img: /img/recent_c.avif # 中控台显示图片（不填不显示） / image displayed in the console
+  img: \img\1721635633231.jpg # 中控台显示图片（不填不显示） / image displayed in the console
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -430,9 +470,9 @@ lazyload:
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
-# Loading
+# Loading 在页面加载时会显示一个页面覆盖内容，加载完成消失。
 loading:
-  fullpage: true # Full screen loading
+  fullpage: false # Full screen loading
   pace: true # Pace loading
 # --------------------------- end ---------------------------
 
@@ -448,7 +488,7 @@ highlight:
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
-# Lightbox
+# Lightbox fancybox 和 mediumZoom 二选一，一定要关闭 fancybox 才能开启 mediumZoom
 lightbox: true
 # warning: Please select any one, but cannot be turned on at the same time.
 fancybox: false # fancybox
@@ -461,9 +501,9 @@ mermaid: true
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
-# OpenGraph
+# OpenGraph 开启后，网站会自动添加 Open Graph 标签，用于社交分享。
 OpenGraph:
-  enable: true
+  enable: false
   options:
     # twitter_card:
     # twitter_image:
@@ -476,7 +516,7 @@ OpenGraph:
 
 # --------------------------- start ---------------------------
 # Wordcount
-# warning: Please install the hexo-wordcount plugin first.
+# warning: Please install the hexo-wordcount plugin first. 需要安装 hexo-wordcount 插件。
 wordcount: false
 # --------------------------- end ---------------------------
 
@@ -489,11 +529,17 @@ busuanzi_use: 0 # 0: original / 1: qingjiao (other: other custom busuanzi platfo
 # --------------------------- start ---------------------------
 # Search
 search:
+# hexo-generator-searchdb配置
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
   enable: true
   type: local # local / algolia
   tags:
     # - Solitude
-    # - Hexo
+    - 热门
   algolia:
     # hits:
     #   per_page: 6
@@ -530,31 +576,31 @@ katex:
 # --------------------------- start ---------------------------
 comment:
   use: # waline, twikoo, valine, artalk, giscus # Up to two comment systems can be turned on at the same time
-  commentBarrage: true # Hot comment switch
-  lazyload: true # Lazy load
-  count: true # Whether to use the comment count
-  pv: true # Whether to use the page view count
+  commentBarrage: false # Hot comment switch
+  lazyload: false # Lazy load
+  count: false # Whether to use the comment count
+  pv: false # Whether to use the page view count
   avatar: https://gravatar.com/avatar # Avatar
   hot_tip: # Hot comment tips
-    enable: true
+    enable: false
     count: 3 # Display when more than 3 comments
 twikoo: # https://twikoo.js.org/
   envId: # url: https://twikoo.sondy.top/
   region: # Environment locale, default is ap-shanghai, Tencent cloud environment fill ap-shanghai or ap-guangzhou; Vercel environment do not fill the.
-  style: true # Use custom styles when turned on
+  style: false # Use custom styles when turned on
   accessToken: # AccessToken
   option: # twikoo option
 waline: # https://waline.js.org/
   envId: # url: https://waline.wzsco.top
-  pageview: true # Whether to enable page access statistics
+  pageview: false # Whether to enable page access statistics
   option: # waline configuration item
 valine:
   appId: # leancloud application app id
   appKey: # leancloud application app key
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   avatar: # https://valine.js.org/avatar.html
-  visitor: true
-  style: true # Use custom styles when turned on
+  visitor: false
+  style: false # Use custom styles when turned on
   option: # options list
 artalk:
   server: # server url
@@ -686,8 +732,8 @@ memorial:
 # When the user exits the page, modify the title
 lure:
   enable: true
-  jump: 404 Not Found
-  back: ヾ(≧∇≦*)ゝHey, hey, you fell for it.
+  jump: 微信红包来了~嘻嘻
+  back: ヾ(≧∇≦*)ゝ嘿嘿，上当了吧
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -703,7 +749,7 @@ expire:
 # --------------------------- start ---------------------------
 # Background
 background:
-  enable: true
+  enable: false
   opacity: .2
   dark: https://i.pinimg.com/originals/d8/b3/9d/d8b39d12b653810db452c437211aeb2e.png
   light: https://i.pinimg.com/originals/93/57/38/935738ed9657b296c2ef0ebd2151eb66.jpg
