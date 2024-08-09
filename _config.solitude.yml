@@ -214,13 +214,13 @@ post:
   default:
     top_cover: true # Article information that displays a wave effect at the top of the article when opened.
     cover: # Default image when no cover is set
-      # -  # 默认图片 / default cover
+      - /img/pwa/favicon.png # 默认图片 / default cover
     locate: China # Location
     copyright: # Copyright
       enable: true
       author:
         url: /about/ # Author link
-        img: # Default site_icon is not filled in
+        img: /img/pwa/favicon.png # Default site_icon is not filled in
       license: CC BY-NC-SA 4.0 # License
       licenurl: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh # License link
   meta: # Article meta information
@@ -451,7 +451,7 @@ highlight:
 # Lightbox
 lightbox: true
 # warning: Please select any one, but cannot be turned on at the same time.
-fancybox: true # fancybox
+fancybox: false # fancybox
 mediumZoom: true # mediumZoom
 # --------------------------- end ---------------------------
 
@@ -646,10 +646,10 @@ google_adsense:
 # --------------------------- start ---------------------------
 # Custom right menu
 right_menu:
-  enable: true
-  commentBarrage: true # Whether to display the hot comment switch.
+  enable: false
+  commentBarrage: false # Whether to display the hot comment switch.
   translate: # Simplified and Traditional Chinese translation.
-    enable: true
+    enable: false
     defaultEncoding: 2 # 1: 默认繁体 2: 默认简体
     translateDelay: 0 # 首次加载翻译迟疑时间
   custom_list: # Custom list
