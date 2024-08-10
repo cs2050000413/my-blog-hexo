@@ -15,7 +15,7 @@ timezone: Asia/Shanghai # 时区（请自行查询）
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
 ## permalink: :year/:month/:day/:title/
-permalink: posts/:abbrlink.html  ## 此处可以自己设置
+permalink: :year/:month/:day/post/:abbrlink.html  ## 此处可以自己设置
 
 ## abbrlink config
 abbrlink:
