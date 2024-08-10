@@ -13,9 +13,8 @@ recommend: true
 
 > Front-matter 是 Markdown 文件最上方以 `---` 分隔的区域，用于指定页面的特殊值。
 
-:::tabs
 == Post Front Matter
-```markdown
+
 ---
 title:
 date:
@@ -26,9 +25,9 @@ katex:
 reprint:
 locate:
 ---
-```
+
 == Page Front Matter
-```markdown
+
 ---
 title:
 date:
@@ -40,17 +39,17 @@ cover:
 katex:
 aside:
 ---
-```
+
 == 即刻、工具箱、我的装备、豆瓣页（音乐、图书、游戏）
-```markdown
+
 ---
 leftend:
 rightend:
 rightbtn:
 rightbtnlink:
 ---
-```
-:::
+
+
 
 |     属性     | 值类型   | 解释                                                                 |
 | :----------: | :------- | :------------------------------------------------------------------- |
@@ -71,20 +70,18 @@ rightbtnlink:
 | rightbtnlink | string   | <Badge>可选</Badge> banner底部右侧按钮跳转链接                       |
 |  container   | boolean  | <Badge>可选</Badge> 是否开启容器（默认true）                         |
 
-::: warning 警告
+ warning 警告
 如果标注可选的参数，可根据自己需要添加，不用全部都写在 Markdown 里。
-:::
+
 
 **自定义拥有 banner 图的页面**
 
-```markdown
+
 ---
 title: 测试
 type: banner
 container: true
 ---
-```
 
-::: tip 注意
+tip 注意
 如果只需要普通的实现 banner 效果，可以不写 container 属性
-:::
