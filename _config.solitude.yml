@@ -19,7 +19,7 @@ site:
     class: text
     # 具体内容 例如：solitude st-logo / Efu / /img/logo.png
     # Specific content, for example: solitude st-logo / Efu / /img/logo.png
-    custom: Solitude
+    custom: Chen's Blogs
   # 网页 Icon
   # Web icon
   siteIcon: /img/pwa/favicon.png
@@ -30,8 +30,10 @@ site:
 # --------------------------- start ---------------------------
 nav:
   group:
-   project: # name
-     Solitude: https://github.com/everfu/hexo-theme-solitude || /img/pwa/favicon.png # name: url || icon
+   我的收藏: # name
+      GitHub: https://github.com/ || \img\project\github.png
+      Gitee码云: https://gitee.com/ || \img\project\gitee.png
+      Solitude主题: https://github.com/everfu/hexo-theme-solitude || /img/pwa/favicon.png # name: url || icon
   menu:
     主页: / # name: link
     文库: # name
@@ -41,7 +43,8 @@ nav:
     社交:
       Moments: /moments/ || fas fa-wifi
       友情链接: /links/ || fas fa-user-group
-      留言板: javascript:travelling() || fas fa-gift
+      # javascript:travelling()
+      留言板: /message/ || fas fa-gift
     我的:
       装备推荐: /equipment/ || fas fa-laptop
       工具箱: /tlink/ || fas fa-toolbox
@@ -253,7 +256,7 @@ post:
       enable: true
       author:
         url: /about/ # Author link
-        img: /img/pwa/user.png # Default site_icon is not filled in
+        img: /img/user.png # Default site_icon is not filled in
       license: CC BY-NC-SA 4.0 # License
       licenurl: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh # License link
   meta: # Article meta information
@@ -293,7 +296,7 @@ post:
     api: https://api.qjqq.cn/api/Imgcolor?img= # api address
     time: 43200000 # api color interval (milliseconds), default is 12 hours
   footer:
-    enable: true
+    enable: false
     desc: Articles from Ever Fu. # description
     button: # Button
       enable: true
@@ -337,8 +340,8 @@ footer:
     author: true # enable site_icon in footer
     left:
       Github: https://github.com/cs2050000413 || fab fa-github # Name: link || icon
-      Mail: mailto:910702767@qq.com || fab fa-envelope
     right:
+      Mail: mailto:910702767@qq.com || fa-solid fa-envelope
       # Bilibili: https://space.bilibili.com/1329819902 || fab fa-bilibili
       # Douyin: https://v.douyin.com/iJsLc8jt/ || fab fa-tiktok
   group: # 从左至右 / From left to right
@@ -731,7 +734,7 @@ memorial:
 # Lure
 # When the user exits the page, modify the title
 lure:
-  enable: true
+  enable: false
   jump: 微信红包来了~嘻嘻
   back: ヾ(≧∇≦*)ゝ嘿嘿，上当了吧
 # --------------------------- end ---------------------------
