@@ -15,6 +15,7 @@ recommend: true
 
 == Post Front Matter
 
+``` bash
 ---
 title:
 date:
@@ -25,9 +26,8 @@ katex:
 reprint:
 locate:
 ---
-
+```
 == Page Front Matter
-
 ---
 title:
 date:
@@ -39,16 +39,14 @@ cover:
 katex:
 aside:
 ---
-
 == 即刻、工具箱、我的装备、豆瓣页（音乐、图书、游戏）
-
 ---
 leftend:
 rightend:
 rightbtn:
 rightbtnlink:
 ---
-
+```
 
 
 |     属性     | 值类型   | 解释                                                                 |
