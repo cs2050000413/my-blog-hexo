@@ -41,10 +41,11 @@ nav:
       全部分类: /categories/ || fas fa-clone
       全部标签: /tags/ || fas fa-tags
     社交:
-      Moments: /moments/ || fas fa-wifi
+      说说: /essay/ || fas fa-wifi
       友情链接: /links/ || fas fa-user-group
+      # banner: /banner/ || fas fa-gift
       # javascript:travelling()
-      留言板: /message/ || fas fa-gift
+      # 留言板: /message/ || fas fa-gift
     我的:
       装备推荐: /equipment/ || fas fa-laptop
       工具箱: /tlink/ || fas fa-toolbox
