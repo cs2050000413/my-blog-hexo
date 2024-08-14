@@ -27,6 +27,7 @@
     "hexo-swpp": "^3.3.7",
     "hexo-theme-landscape": "^1.0.0",
     "moment": "^2.30.1",
+    "my-hexo": "file:",
     "swpp-backends": "^2.3.12"
   }
 }

@@ -1,4 +1,16 @@
-- <img src="E:\gitee\my-blog-hexo\source\_posts\picture\vue.png" alt="vue" style="zoom:33%;" />
+---
+layout: text
+title: vue入门教程
+date: 2023-09-15 23:53:17
+tags: 
+	- 精选 
+	- vue
+cover: img\posts\picture\vue.png
+description: vue入门教程
+recommend: true
+---
+
+ <img src= "..\img\posts\picture\vue.png" alt="vue" style="zoom:33%;" />
 
 ## 一、Vue简介
 
@@ -16,7 +28,7 @@ View：视图层，在这里表示 DOM（HTML 操作的元素）
 ViewModel：连接视图和数据的中间件，Vue.js 就是 MVVM 中的 ViewModel 层的实现者
 ```
 
-![1](E:\gitee\my-blog-hexo\source\_posts\picture\1.png)
+![1](img\posts\picture\1.png)
 
 ```
 在 MVVM 架构中，是不允许 数据 和 视图 直接通信的，只能通过 ViewModel 来通信，而 ViewModel 就是定义了一个Observer 观察者
@@ -52,7 +64,7 @@ React引入了虚拟DOM（Virtual DOM）的机制：在浏览器端用Javascript
 
 #### 1.5.1 数据驱动
 
-![2](E:\gitee\my-blog-hexo\source\_posts\picture\2.png)
+![2](\picture\2.png)
 
 ​	当你把一个普通的 JavaScript 对象传给 Vue 实例的 data 选项，Vue 将遍历此对象所有的属性，并使用 Object.defineProperty 把这些属性全部转为 getter/setter。Object.defineProperty 是 ES5 中一个无法 shim 的特性，这也就是为什么 Vue 不支持 IE8 以及更低版本浏览器。
 这些 getter/setter 对用户来说是不可见的，但是在内部它们让 Vue 追踪依赖，在属性被访问和修改时通知变化。这里需要注意的问题是浏览器控制台在打印数据对象时 getter/setter 的格式化并不同，所以你可能需要安装 vue-devtools 来获取更加友好的检查接口。
@@ -396,7 +408,7 @@ v、k、i 这几个字符可以自己定义，分别表示每次循环内容的�
 ​	可以清楚的看到，此时数据源是一个student数组，通过两层v-for循环，外层遍历数组中的每个student对象，内层v-for遍历每个对象的v、k、i。
 页面效果如下：
 
-![3](E:\gitee\my-blog-hexo\source\_posts\picture\3.png)
+![3](img\posts\picture\3.png)
 
 ## 七、Vue的属性绑定
 
@@ -690,7 +702,7 @@ Vue提供了多个关键字，能快速的将数据对象中的值绑定在视�
 
 仔细看图中说明，观察其中的差异
 
-![4](E:\gitee\my-blog-hexo\source\_posts\picture\4.png)
+![4](img\posts\picture\4.png)
 
 #### 8.3.4 结论
 
@@ -879,7 +891,7 @@ Vue中的组件也是有生命周期的。一个Vue组件会经历：初始化�
 
 组件的生命周期钩子
 
-<img src="E:\gitee\my-blog-hexo\source\_posts\picture\5.png" alt="5" style="zoom: 50%;" />
+<img src="..\img\posts\picture\5.png" alt="5" style="zoom: 300%;" />
 
 ## 十、使用Vue-Cli搭建Vue项目
 
@@ -958,7 +970,7 @@ npm run dev
 
 项目目录及各目录介绍如下：
 
-![6](E:\gitee\my-blog-hexo\source\_posts\picture\6.png)
+![6](img\posts\picture\6.png)
 
 ### 10.7 webpack项目的几个常用命令
 

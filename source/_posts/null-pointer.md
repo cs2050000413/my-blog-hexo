@@ -2,7 +2,9 @@
 layout: text
 title: 测试类空指针异常报错
 date: 2023-09-15 23:53:17
-tags: 精选 java
+tags: 
+    - 精选 
+    - java
 cover: /img/pwa/favicon.png
 description: 测试类空指针异常报错
 recommend: true
