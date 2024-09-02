@@ -71,7 +71,7 @@ personalities:
   linkText: 16personalities
   typeLink: https://www.16personalities.com/ch/infj-%E4%BA%BA%E6%A0%BC
   typeName: 提倡者
-  myphoto: https://7.isyangs.cn/1/65eb2d340cad3-1.png
+  myphoto: https://qiniu.shuochen.online/001.jpg
 
 motto:
   title: 座右铭
@@ -109,7 +109,7 @@ likes:
     bg: https://7.isyangs.cn/1/65eb2e5f85132-1.png
     tips: 音乐偏好
     title: 民谣、古典、轻音乐
-    subtips: 跟 王卓Sco 一起欣赏更多音乐
+    subtips: 跟 Chen 一起欣赏更多音乐
     button: true
     button_text: 更多推荐
     button_link: /music/
