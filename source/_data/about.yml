@@ -13,8 +13,8 @@ title: 关于本站
 
 contentinfo: # 顶部个人信息展示
   sup: 你好，很高兴认识你👋
-  name: 我叫王卓Sco # 名称
-  title: 是一名学生、软件工程师、独立开发者、博主 # 介绍
+  name: 我叫陈硕 # 名称
+  title: 是一名软件工程师、独立开发者 # 介绍
   tip: 追求
   slogan: 源于<br>热爱而去创造
   mask:
@@ -53,21 +53,24 @@ careers:
   title: 生涯
   subtitle: 无限进步
   items:
-    - school: 软件工程
-      major: 学习
+    - school: 信息与计算科学专业
+      major: 学习（2023年毕业）
+      color: "#357ef5"
+    - school: Java后端软件工程师
+      major: 工作
       color: "#357ef5"
   image: https://7.isyangs.cn/1/65eb2d10ba24d-1.png
 
 personalities:
   tips: 性格
-  title: 执政官
+  title: 提倡者
   color: "#56a178"
-  type: ESFJ-A
+  type: INFJ-A
   image: https:/example.com/ESFJ-A.svg
   link: https://www.16personalities.com/
   linkText: 16personalities
-  typeLink: https://www.16personalities.com/ch/esfj-人格
-  typeName: 执政官
+  typeLink: https://www.16personalities.com/ch/infj-%E4%BA%BA%E6%A0%BC
+  typeName: 提倡者
   myphoto: https://7.isyangs.cn/1/65eb2d340cad3-1.png
 
 motto:
@@ -78,7 +81,7 @@ expertise:
   title: 特长
   prefix: 数学、物理、化学
   specialist: 专家
-  content: 学习能力
+  content: 学习、创新能力
   level: MAX
 
 game1:
@@ -117,11 +120,11 @@ tj: # 统计
   img: https://7.isyangs.cn/1/65eb2e9109826-1.png # 背景
 
 oneself: # 按需填写
-  location: 中国，湖南省 # 所在位置
-  birthYear: 2004 # 生日
-  university: 湖南大学 # 毕业学校
-  major: 软件工程 # 专业
-  occupation: 学生 # 职位
+  location: 中国，浙江省 # 所在位置
+  birthYear: 2001 # 生日
+  university: 浙江科技大学 # 毕业学校
+  major: 信息与计算科学 # 专业
+  occupation: Java工程师 # 职位
   map: # 你所在位置的地图
     light: https://7.isyangs.cn/1/65eb2ec63a9aa-1.png # 白天
     dark: https://7.isyangs.cn/1/65eb2eedc780e-1.png # 夜晚
@@ -141,8 +144,8 @@ cause:
 tenyear:
   tips: 十年之约
   title: 一个人的寂寞，一群人的狂欢。
-  start: 2023年04月20日
-  end: 2033年04月20日
+  start: 2024年04月20日
+  end: 2034年04月20日
 
 award:
   enable: true
